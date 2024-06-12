@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sing up</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <i class="fa-solid fa-circle-check checked"></i>
+        <form class="form" id="form">
+            <div class="content">
+                <div class="btns">
+                    <button id="singup-btn" onclick="showSingUp()" class="active">Sing up</button>
+                    <button id="login-btn" onclick="showLogin()">Log in</button>
+                </div>
+                <div class="singup">
+                    <p class="title">Sing up for free !</p>
+                    <input type="text" id="first-name" placeholder="First name" required>
+                    <input type="text" id="last-name" placeholder="Last name" required>
+                    <span class="sign-email"> <input type="email" id="email" placeholder="Your Email" required> <i
+                            class="fa-solid fa-envelope"></i></span>
+
+                    <span class="sign-pass"><input type="password" id="password" placeholder="Set password" required><i
+                            class="fa-solid fa-lock"></i></span>
+                    <button onclick="checked()" class="submit" type="reset">Get Started</button>
+                </div>
+
+                <div class="Login">
+                    <p class="title">get into to your account !</p>
+                    <span class="login-email"><input type="email" id="email" placeholder="Your Email" required><i
+                            class="fa-solid fa-envelope"></i></span>
+                    <span class="login-pass"><input type="password" id="password" placeholder="Your Password"
+                            required><i class="fa-solid fa-lock"></i></span>
+                    <button onclick="checked()" class="submit" type="reset">Continue</button>
+                    <p class="forget"><a href="#">forget password ?</a></p>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
